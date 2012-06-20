@@ -1,6 +1,6 @@
 /**
  * Created with JetBrains WebStorm.
- * Creator: Dmitriy Sidorenko
+ * Author: Dmitry Sidorenko
  * Date: 6/12/12
  * Time: 12:13 AM
  * To change this template use File | Settings | File Templates.
