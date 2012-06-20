@@ -345,8 +345,8 @@
 
 	}());
 
-	scope.__VisualCampaignBuilder__ = scope.__VisualCampaignBuilder__ || (scope.__VisualCampaignBuilder__ = {});
-	scope.__VisualCampaignBuilder__.Model = Model;
-	scope.__VisualCampaignBuilder__.Variant = Variant;
-	scope.__VisualCampaignBuilder__.Collection = Collection;
+	scope.MJF = scope.__VisualCampaignBuilder__ || (scope.__VisualCampaignBuilder__ = {});
+	scope.MJF.Model = Model;
+	scope.MJF.Variant = Variant;
+	scope.MJF.Collection = Collection;
 }(window));
