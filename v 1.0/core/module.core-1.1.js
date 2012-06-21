@@ -32,10 +32,10 @@
 					if (instance && $.isFunction(instance.init) && $.isFunction(instance.destroy)) {
 						m.instance = instance;
 						m.instance.init();
-						this.log(1, "module [" + moduleID + "] is started");
+						this.log(1, "Module [" + moduleID + "] Start: successfully started");
 						(callback || $.noop)();
 					} else {
-						this.log(1, "Module '" + moduleID + "' Start : FAILED : instance is undefined or has not init or destroy methods");
+						this.log(1, "Module '" + moduleID + "' Start : FAILED : instance is undefined or doesn't have init or destroy methods");
 					}
 				}
 			}
@@ -49,10 +49,10 @@
 		 * @return {*}
 		 */
 		destroyModule:function (moduleID, callback) {
-			var m = this.modules[moduleID];
+			var m = this._modules[moduleID];
 			if (m && m.instance) {
 				m.instance.destroy();
-				this.log(1, "module [" + moduleID + "] is stopped");
+				this.log(1, "module [" + moduleID + "] Destroy: successfully stopped");
 				m.instance = null;
 				(callback || $.noop)();
 			} else {
